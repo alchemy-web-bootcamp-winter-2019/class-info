@@ -1,11 +1,14 @@
   fetch('https://swapi.co/api/people/1')
-  .then((userData) => {
+  .then((swData) => {
     // this only runs if there is no error getting user data
-    return userData.name;
+    return swData;
   })
-  .then((userName) => {
+  .then((swData) => {
     // this only runs if there is no error in all previous calls
-    console.log(userName);
+    return swData.json();
+  })
+  .then((swDataJson) => {
+    console.log(swDataJson.name);
   })
   .catch((error) => {
     // this only runs if there is an error
