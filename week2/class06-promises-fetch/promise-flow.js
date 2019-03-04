@@ -8,6 +8,7 @@
     return swData.json();
   })
   .then((swDataJson) => {
+    // this again only runs if there is no error in all previous calls
     console.log(swDataJson.name);
   })
   .catch((error) => {
