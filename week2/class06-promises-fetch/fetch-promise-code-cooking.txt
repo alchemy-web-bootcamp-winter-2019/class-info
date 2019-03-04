@@ -1,0 +1,66 @@
+//PROMISES
+
+// Show cohort https://swapi.co/ homepage
+// Briefly demonstrate interactive window to retrieve
+// data. Close webpage and then code cook from a local 
+// browser console.
+
+
+
+const firstStarWarsPerson = 'https://swapi.co/api/people/1';
+
+fetch(firstStarWarsPerson);
+
+// Click triangle next to Promise {<pending>}
+// to expose Promise object
+// Click triangle next to [[PromiseValue]]: Response
+// to expose lack of luke skywalker data
+
+--------------------------------------------------
+
+fetch(firstStarWarsPerson).then(response => response.json());
+
+// Click triangle next to Promise {<pending>}
+// to expose Promise object
+// Click triangle next to [[PromiseValue]]: Response
+// to expose presence of seeThreePeeOh data!!!
+// Say 'ooooooh!'
+
+---------------------------------------------------
+
+const secondSwPerson = 'https://swapi.co/api/people/2';
+
+fetch(secondSwPerson).then(response => response.json()).then(starWarsApiJson => console.log(JSON.stringify(starWarsApiJson)));
+
+// exclaim 'oooooh!' as JSON prints to console
+// watch out for those very last three parens
+// make sure they're all there
+
+--------------------------------------------------
+
+let myBucketOfStarWars = {};
+
+myBucketOfStarWars;
+// Click on triangles to show it's empty
+
+const allSwPeople = 'https://swapi.co/api/people/';
+
+fetch(allSwPeople).then(response => response.json()).then(starWarsApiJson => myBucketOfStarWars = starWarsApiJson);
+
+console.log(JSON.stringify(myBucketOfStarWars));
+
+// yaaaay
+
+const thisIsNotData = fetch(allSwPeople).then(response => response.json()).then(starWarsApiJson => myBucketOfStarWars = starWarsApiJson);
+
+// eek!
+
+myBucketOfStarWars;
+
+// compare that to this
+
+
+
+
+
+
