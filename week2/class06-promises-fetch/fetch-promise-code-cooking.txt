@@ -65,7 +65,7 @@ fetch('https://swapi.co/api/doesntexist').then(results => console.log(result));
 
 //the above will break. Scream in horror and then node sagely at result in console and look mysterious.
 
-fetch('https://swapi.co/api/doesntexist').then(results => console.log(result)).catch(error => console.log('Catch this error: ', error));
+fetch('https://swapi.co/api/doesntexist').then(results => console.log(result)).catch(error => console.log('Catch this error: ', error.message));
 
 //there is a change in console output! Nod sagely. Type the call before and this one alternatively a few more times until 
 // the other cookers get used to the different output
