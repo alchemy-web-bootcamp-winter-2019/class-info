@@ -1,8 +1,9 @@
 throw new Error('Hi! I bombed your code'); 
 
-// have everyone copy and paste below into their chrome js console. Run. See result. Then:
+// have everyone copy and paste below into their chrome js console. 
+// Run. See result. Then:
 // Replace topmost comment with a thrown error (line 1). See result.
-// Replace next comment, see result, etc. Stop before catch on 23.
+// Replace next comment, see result, etc. Stop before catch.
 
 fetch('https://swapi.co/api/people/1')
   .then((swData) => {
