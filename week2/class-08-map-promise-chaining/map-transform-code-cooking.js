@@ -30,7 +30,7 @@ var words = ['french', 'fancy', 'fingerfood'];
 
 numbers;
 
-
+//
 
 numbers.map(number => number * 3);
 
