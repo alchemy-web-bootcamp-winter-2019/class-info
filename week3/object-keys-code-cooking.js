@@ -45,4 +45,18 @@ JSON.stringify(phrasebook);
 
 Object.keys(phrasebook);
 
+//
+
+const fruit = { 
+    a: 'apple',
+    b: 'banana',
+    c: 'cantaloupe'
+ };
+
+
+const newFruit = Object.keys(fruit).map(fruitId => {
+    return { id: fruitId, name: fruit[fruitId]};
+});
+
+// expose new array of objects
 
