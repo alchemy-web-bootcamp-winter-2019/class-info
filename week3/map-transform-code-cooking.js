@@ -5,13 +5,13 @@
 
 const phrasebook = [
     {
-        greeting: "Grüss dich",
+        greeting: 'Grüss dich',
         language: 'German'
     },
     {
-        greeting: "Dia duit",
+        greeting: 'Dia duit',
         language: 'Irish',
-        response: "Dia s'mura dhit"
+        response: 'Dia s\'mura dhit'
     },
     {
         greeting: 'Marhaba',
