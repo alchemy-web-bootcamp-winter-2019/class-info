@@ -52,7 +52,7 @@ phrasebook;
 
 //
 
-phrasebook.map(phrase => { return { greeting: phrase.greeting; }});
+phrasebook.map(phrase => { return { greeting: phrase.greeting }; });
 
 //
 
